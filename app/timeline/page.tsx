@@ -31,7 +31,7 @@ export default function TimelinePage() {
   const sortedYears = Object.keys(groupedByYear).sort((a, b) => Number(b) - Number(a));
 
   return (
-    <main className="min-h-screen bg-[#141414] text-white">
+    <main className="min-h-screen bg-[#141414] text-white overflow-x-hidden">
       <Navbar />
       
       <div className="pt-32 px-4 md:px-12 pb-20 max-w-7xl mx-auto">
@@ -39,7 +39,7 @@ export default function TimelinePage() {
           My Professional Journey
         </h1>
 
-        {/* HEADERS */}
+        {/* HEADERS (Desktop Only) */}
         <div className="hidden md:flex justify-between items-center mb-16 px-4">
            <div className="w-1/2 flex justify-end pr-16 items-center space-x-3 text-[#E50914]">
              <h2 className="text-2xl font-bold uppercase tracking-widest">Education</h2>
@@ -52,7 +52,7 @@ export default function TimelinePage() {
         </div>
 
         <div className="relative">
-          {/* CENTER LINE (Fixed Position) */}
+          {/* CENTER LINE (Desktop Only) */}
           <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-0.5 bg-gray-800 -translate-x-1/2 z-0" />
 
           {sortedYears.map((year) => {
@@ -65,15 +65,17 @@ export default function TimelinePage() {
               <div key={year} className="mb-16 relative">
                 
                 {/* YEAR BUBBLE */}
-                <div className="hidden md:flex absolute left-1/2 -top-3 -translate-x-1/2 z-20 items-center justify-center bg-[#E50914] text-white font-bold text-sm px-3 py-1 rounded-full shadow-lg border-4 border-[#141414]">
+                {/* Mobile: Aligned Left | Desktop: Centered */}
+                <div className="flex absolute left-0 md:left-1/2 -top-8 md:-top-3 md:-translate-x-1/2 z-20 items-center justify-center bg-[#E50914] text-white font-bold text-sm px-3 py-1 rounded-full shadow-lg border-4 border-[#141414]">
                   {year}
                 </div>
 
-                <div className="flex flex-col md:flex-row">
+                {/* CONTENT CONTAINER */}
+                {/* Mobile: Adds Left Border & Padding | Desktop: No Border, Row Layout */}
+                <div className="flex flex-col md:flex-row border-l-2 border-gray-800 md:border-l-0 ml-4 md:ml-0 pl-6 md:pl-0 pt-4 md:pt-0">
                   
                   {/* LEFT COLUMN: EDUCATION */}
-                  {/* NOTE: We removed padding from the container and added it to the inner content to handle the line alignment */}
-                  <div className="w-full md:w-1/2 md:text-right space-y-12 relative">
+                  <div className="w-full md:w-1/2 md:text-right space-y-12 relative mb-8 md:mb-0">
                     {eduItems.length > 0 ? (
                       eduItems.map(item => {
                         const [uni, fullDate] = (item.subtitle || '').split(' | ');
@@ -93,13 +95,8 @@ export default function TimelinePage() {
                             <h4 className="text-lg text-gray-400 mb-2">{uni}</h4>
 
                             {/* --- CONNECTORS (Desktop Only) --- */}
-                            
-                            {/* 1. Horizontal Line: Spans the 4rem (16) padding gap */}
                             <div className="hidden md:block absolute right-0 top-7 w-16 h-[1px] bg-gray-800" />
-                            
-                            {/* 2. The Dot: Positioned exactly at right:-6px to center on the 0.5 center line */}
                             <div className="hidden md:block absolute -right-[6px] top-[22px] w-3 h-3 rounded-full bg-[#E50914] ring-4 ring-[#141414] group-hover:scale-125 transition z-10" />
-                            
                           </div>
                         );
                       })
@@ -107,7 +104,7 @@ export default function TimelinePage() {
                   </div>
 
                   {/* RIGHT COLUMN: EXPERIENCE */}
-                  <div className="w-full md:w-1/2 mt-8 md:mt-0 space-y-12 relative">
+                  <div className="w-full md:w-1/2 mt-0 md:mt-0 space-y-12 relative">
                     {workItems.length > 0 ? (
                       workItems.map(item => {
                         const [company, fullDate] = (item.subtitle || '').split(' | ');
@@ -127,13 +124,8 @@ export default function TimelinePage() {
                             <h4 className="text-lg text-gray-400 mb-1">{company}</h4>
 
                             {/* --- CONNECTORS (Desktop Only) --- */}
-
-                            {/* 1. Horizontal Line */}
                             <div className="hidden md:block absolute left-0 top-7 w-16 h-[1px] bg-gray-800" />
-
-                            {/* 2. The Dot: Positioned exactly at left:-6px */}
                             <div className="hidden md:block absolute -left-[6px] top-[22px] w-3 h-3 rounded-full bg-gray-500 ring-4 ring-[#141414] group-hover:scale-125 transition z-10" />
-
                           </div>
                         );
                       })

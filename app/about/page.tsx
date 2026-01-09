@@ -7,7 +7,7 @@ import { Camera, Gamepad2, Instagram, Film, Zap, MapPin, ArrowLeft, Play, Pause,
 
 export default function AboutPage() {
   const { bio, hobbies, gallery, instagram } = contentData.personal;
-  const profilePic = "/images/my-profile.jpg"; 
+  const profilePic = "/images/my-profile.png"; 
   
   // STATE FOR VIDEO PLAYER
   const [videoSrc, setVideoSrc] = useState<string | null>(null);
@@ -62,7 +62,7 @@ export default function AboutPage() {
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded border border-[#E50914]/50 bg-[#E50914]/10 text-[#E50914] text-xs font-bold tracking-widest uppercase">
               <Zap className="w-3 h-3" /> Player 1 Ready
             </div>
-            <h1 className="text-6xl md:text-8xl font-black uppercase tracking-tighter italic pr-16 py-4 leading-normal">
+            <h1 className="text-4xl md:text-8xl font-black uppercase tracking-tighter italic pr-0 md:pr-16 py-4 leading-normal">
               <span className="inline-block pr-6 text-transparent bg-clip-text bg-gradient-to-r from-white via-gray-200 to-gray-400">
                 Krr1sh
               </span>
@@ -93,7 +93,7 @@ export default function AboutPage() {
         <div className="space-y-8">
           <div className="flex items-center gap-4">
              <div className="h-8 w-1 bg-[#E50914]"></div>
-             <h2 className="text-4xl font-black uppercase tracking-tighter">Highlight Reel</h2>
+             <h2 className="text-4xl font-black uppercase tracking-tighter">Highlights</h2>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

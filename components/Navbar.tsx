@@ -27,10 +27,10 @@ export default function Navbar() {
 
   return (
     <header className={`${isScrolled ? 'bg-[#141414]' : 'bg-transparent'} fixed top-0 z-50 w-full transition duration-500`}>
-      <div className="flex items-center px-4 py-4 md:px-12 gap-8 relative">
+      <div className="flex items-center px-3 py-4 md:px-12 gap-4 md:gap-8 relative">
         
         <Link href="/">
-          <h1 className="text-[#E50914] text-2xl md:text-3xl font-black cursor-pointer tracking-tighter uppercase drop-shadow-md whitespace-nowrap" 
+          <h1 className="text-[#E50914] text-xl md:text-3xl font-black cursor-pointer tracking-tighter uppercase drop-shadow-md whitespace-nowrap" 
               style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.6)' }}>
             Sai Krishna Goli
           </h1>

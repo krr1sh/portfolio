@@ -33,7 +33,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      // Inside app/layout.tsx
+<body className={`${inter.className} overflow-x-hidden`}>
+  {children}
+</body>
     </html>
   );
 }
