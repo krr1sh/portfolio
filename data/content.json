@@ -1,0 +1,265 @@
+{
+  "hero": {
+    "title": "Sai Krishna Goli",
+    "subtitle": "Business Systems / Data Analyst",
+    "description": "I am a results-oriented Business & Data Analyst with over 6 years of experience bridging the gap between complex data and strategic decision-making. From ensuring government compliance in Athens-Clarke County to optimizing high-volume operations at Amazon, I specialize in translating raw data into actionable insights, scalable systems, and measurable business growth.",
+    "thumbnail": "/images/my-profile.jpg",
+    "resume": "/resume.pdf"
+  },
+  "categories": [
+    {
+      "title": "Experience",
+      "items": [
+        {
+          "id": "exp-future",
+          "title": "Your Company Name?",
+          "subtitle": "Your Location | Next Chapter",
+          "description": "I am currently seeking my next challenge. Hiring me means adding a dedicated, compliance-focused analyst to your team who is ready to optimize your workflows and derive value from your data on Day 1. Let's make this tile a reality.",
+          "bullets": [
+             "Ready to deploy advanced SQL and Python skills to solve your data problems.",
+             "Prepared to lead requirement gathering and system optimization projects.",
+             "Eager to bring 6+ years of enterprise and government experience to your organization."
+          ],
+          "match": "Ready",
+          "rating": "HIRE",
+          "tags": ["Available Now", "Business Analysis", "Data Strategy"],
+          "thumbnail": "/images/future-logo.jpg"
+        },
+        {
+          "id": "exp1",
+          "title": "Systems Analyst",
+          "subtitle": "Unified Government of Athens-Clarke County | Jan 2025 – Present",
+          "description": "Serving as a key technical liaison for the local government, focused on modernizing legacy systems and ensuring strict regulatory compliance across judicial and operational departments.",
+          "bullets": [
+             "Leading critical system analysis initiatives to map current workflows and identify automation opportunities within government operations.",
+             " enforcing CJIS compliance standards and maintaining rigorous data security protocols across inter-departmental networks.",
+             "Collaborating directly with IT leadership and non-technical stakeholders to translate complex legislative requirements into technical specifications.",
+             "Providing Tier-2 support and optimization for the Tyler New World ERP and Enterprise Mobile (JMS) systems."
+          ],
+          "match": "Current",
+          "rating": "GOVT",
+          "tags": ["Systems Analysis", "Compliance", "Support"],
+          "thumbnail": "/images/athens-logo.jpg"
+        },
+        {
+          "id": "exp2",
+          "title": "Digital & Devices Associate",
+          "subtitle": "Amazon | Sep 2019 – Jul 2022",
+          "description": "Operated within Amazon's high-velocity logistics network, focusing on device ecosystem management, technical troubleshooting, and process efficiency at scale.",
+          "bullets": [
+            "Oversaw the daily lifecycle and inventory health of digital devices, ensuring 99%+ availability for operational shifts.",
+            "Identified bottlenecks in device deployment processes and implemented standard operating procedures (SOPs) that reduced downtime.",
+            "Collaborated with cross-functional engineering and operations teams to resolve hardware and software anomalies in real-time."
+          ],
+          "match": "3 Years",
+          "rating": "AMZN",
+          "tags": ["Operations", "Devices", "Process Improvement"],
+          "thumbnail": "/images/amazon-logo.jpg"
+        },
+        {
+          "id": "exp3",
+          "title": "Data Analyst",
+          "subtitle": "Clasc | Mar 2019 – Aug 2019",
+          "description": "Focused on foundational data analytics and reporting, transforming raw operational data into clear visual insights for management review.",
+          "bullets": [
+            "Developed automated daily and weekly performance reports using SQL queries and Advanced Excel functions.",
+            "Analyzed large historical datasets to identify seasonal trends, aiding in more accurate inventory forecasting.",
+            "Maintained data integrity across multiple legacy databases by performing regular quality audits and cleaning procedures."
+          ],
+          "match": "6 Mos",
+          "rating": "DATA",
+          "tags": ["SQL", "Reporting", "Data Cleaning"],
+          "thumbnail": "/images/clasc-logo.jpg"
+        },
+        {
+          "id": "exp4",
+          "title": "Business Analyst",
+          "subtitle": "Republic Tools | April 2018 – Feb 2019",
+          "description": "Acted as the bridge between manufacturing floor operations and management strategy, using data to drive efficiency in a production environment.",
+          "bullets": [
+            "Facilitated requirements gathering sessions with production leads to define specs for new internal tooling software.",
+            "Mapped end-to-end manufacturing processes to identify waste and recommended workflow changes that improved throughput.",
+            "Assisted in User Acceptance Testing (UAT) for ERP module upgrades, ensuring minimal disruption to the production line."
+          ],
+          "match": "1 Year",
+          "rating": "MFG",
+          "tags": ["Business Analysis", "Requirements", "Process Mapping"],
+          "thumbnail": "/images/republic-logo.jpg"
+        }
+      ]
+    },
+    {
+      "title": "Education",
+      "items": [
+        {
+          "id": "edu1",
+          "title": "MS in Information Systems",
+          "subtitle": "Your University Name | Aug 2022 – May 2024",
+          "description": "A rigorous graduate program focused on the intersection of business strategy and data science. Coursework emphasized predictive analytics, project management methodologies, and enterprise system architecture.",
+          "match": "Masters",
+          "rating": "MS",
+          "tags": ["Business Data Analytics", "Project Management", "Data Mining"],
+          "thumbnail": "/images/university-ms-logo.jpg"
+        },
+        {
+          "id": "edu2",
+          "title": "B.Tech Computer Science",
+          "subtitle": "Your Undergrad Univ | Sep 2014 – Apr 2018",
+          "description": "Comprehensive technical foundation in software engineering principles. Gained hands-on experience in full-stack web development, database management systems, and algorithm design.",
+          "match": "B.Tech",
+          "rating": "BS",
+          "tags": ["Web Development", "Data Structures", "UI/UX Design"],
+          "thumbnail": "/images/university-bs-logo.jpg"
+        }
+      ]
+    },
+    {
+      "title": "Technical Skills",
+      "items": [
+        {
+          "id": "skill1",
+          "title": "Data & Analytics",
+          "subtitle": "Core Competencies | Advanced",
+          "description": "My primary toolkit for turning raw data into insight. I leverage Python libraries (Pandas, NumPy) for complex transformations and SQL for robust querying, ensuring data is clean, accurate, and ready for analysis.",
+          "match": "Expert",
+          "rating": "CORE",
+          "tags": ["SQL", "Advanced Excel", "Python", "Data Analysis", "KPI Development", "Pandas", "NumPy"],
+          "thumbnail": "/images/skill-analytics.jpg"
+        },
+        {
+          "id": "skill2",
+          "title": "BI & Reporting",
+          "subtitle": "Visualization Tools | Expert",
+          "description": "Translating numbers into narratives. I specialize in designing interactive Power BI and Tableau dashboards that allow executives to drill down into KPIs and make evidence-based decisions instantly.",
+          "match": "Expert",
+          "rating": "VISUAL",
+          "tags": ["Power BI", "Tableau", "SSRS", "Crystal Reports", "Dashboard Design"],
+          "thumbnail": "/images/skill-bi.jpg"
+        },
+        {
+          "id": "skill3",
+          "title": "Databases",
+          "subtitle": "Engineering & Quality | Advanced",
+          "description": "The backbone of any data operation. I have extensive experience managing relational databases, building ETL pipelines to move data efficiently, and enforcing data quality standards on AWS and Azure platforms.",
+          "match": "High",
+          "rating": "DB",
+          "tags": ["SQL Server", "MySQL", "ETL Pipelines", "Data Validation", "AWS", "Azure"],
+          "thumbnail": "/images/skill-db.jpg"
+        },
+        {
+          "id": "skill4",
+          "title": "Business Analysis",
+          "subtitle": "Process & Strategy | Expert",
+          "description": "I speak both 'Dev' and 'Business'. My expertise lies in gathering unclear requirements, mapping complex processes, and managing User Acceptance Testing (UAT) to ensure technical solutions meet business goals.",
+          "match": "Expert",
+          "rating": "BA",
+          "tags": ["Requirements Gathering", "Process Mapping", "Workflow Optimization", "UAT"],
+          "thumbnail": "/images/skill-ba.jpg"
+        },
+        {
+          "id": "skill5",
+          "title": "Tools & Compliance",
+          "subtitle": "Governance & Platforms | Certified",
+          "description": "Navigating the regulatory landscape. I am well-versed in maintaining compliance (CJIS, HIPAA) and utilizing enterprise management tools like Jira and ERP systems to keep projects on track and secure.",
+          "match": "High",
+          "rating": "TOOLS",
+          "tags": ["Jira", "Confluence", "CJIS Compliance", "HIPAA", "ERP Systems"],
+          "thumbnail": "/images/skill-tools.jpg"
+        },
+        {
+          "id": "skill6",
+          "title": "Web & Code",
+          "subtitle": "Development | Intermediate",
+          "description": "Understanding the front-end. My background in web technologies allows me to communicate effectively with developers and script custom solutions when out-of-the-box tools aren't enough.",
+          "match": "Med",
+          "rating": "DEV",
+          "tags": ["HTML", "CSS", "SEO", "Python Scripting"],
+          "thumbnail": "/images/skill-code.jpg"
+        }
+      ]
+    },
+    {
+      "title": "Certifications",
+      "items": [
+        {
+          "id": "cert1",
+          "title": "Google Data Analytics",
+          "subtitle": "Professional Certificate",
+          "description": "A comprehensive curriculum covering the entire data lifecycle: ask, prepare, process, analyze, share, and act. Included hands-on labs with R programming and Tableau.",
+          "match": "Cert",
+          "rating": "GGL",
+          "tags": ["R Programming", "Tableau", "Data Cleansing"],
+          "thumbnail": "/images/cert-google.jpg"
+        },
+        {
+          "id": "cert2",
+          "title": "Certified Scrum Master",
+          "subtitle": "Scrum Alliance",
+          "description": "Certified in agile project management, facilitating daily stand-ups, sprint planning, and removing blockers to ensure rapid iterative delivery of software products.",
+          "match": "Cert",
+          "rating": "CSM",
+          "tags": ["Agile Methodology", "Scrum", "Sprint Planning"],
+          "thumbnail": "/images/cert-scrum.jpg"
+        },
+        {
+          "id": "cert3",
+          "title": "AWS Cloud Practitioner",
+          "subtitle": "Amazon Web Services",
+          "description": "Validated knowledge of the AWS Cloud platform, including basic security and compliance aspects, shared responsibility model, and core AWS services.",
+          "match": "Cert",
+          "rating": "AWS",
+          "tags": ["Cloud Computing", "Security", "Cloud Architecture"],
+          "thumbnail": "/images/cert-aws.jpg"
+        }
+      ]
+    },
+    {
+      "title": "Projects",
+      "items": [
+        {
+          "id": "proj1",
+          "title": "Sales Dashboard",
+          "subtitle": "Power BI | Retail Analysis",
+          "description": "Designed a dynamic Power BI dashboard for a retail client. The tool aggregated data from 3 disparate sources to track regional sales performance, reducing reporting time by 40%.",
+          "match": "98%",
+          "rating": "PBI",
+          "tags": ["Power BI", "DAX", "Data Modeling", "ETL"],
+          "thumbnail": "/images/project-dashboard.jpg"
+        },
+        {
+          "id": "proj2",
+          "title": "Churn Prediction Model",
+          "subtitle": "Python | Machine Learning",
+          "description": "Built a logistic regression model using Python (Scikit-Learn) to identify customers at risk of churn. The model achieved 85% accuracy and helped the marketing team target retention campaigns.",
+          "match": "95%",
+          "rating": "ML",
+          "tags": ["Python", "Scikit-Learn", "Logistic Regression", "Predictive Analytics"],
+          "thumbnail": "/images/project-ml.jpg"
+        },
+        {
+          "id": "proj3",
+          "title": "Inventory Mgmt System",
+          "subtitle": "SQL | Database Design",
+          "description": "Optimized a slow-performing inventory database by normalizing schema and creating stored procedures. This resulted in a 30% improvement in query execution speed for daily reports.",
+          "match": "99%",
+          "rating": "SQL",
+          "tags": ["SQL Server", "Normalization", "Stored Procedures", "Performance Tuning"],
+          "thumbnail": "/images/project-sql.jpg"
+        }
+      ]
+    }
+  ],
+  "personal": {
+    "bio": "Level 25 Analyst by day, Content Creator by night. When I'm not grinding XP in SQL and Python, you can find me capturing cinematic moments or editing my next montage. I view the world through a creative lens—literally.",
+    "hobbies": ["Competitive Gaming", "Video Editing", "Cinematography", "Travel"],
+    "instagram": "https://www.instagram.com/thats_his_pov/",
+    "linkedin": "https://linkedin.com/in/your_profile",
+    "email": "saikrishna@example.com",
+    "phone": "+1 (555) 123-4567",
+    "gallery": [
+      { "type": "image", "src": "/images/my-pic-1.jpg" },
+      { "type": "video", "src": "/images/my-edit-1.mp4" }, 
+      { "type": "video", "src": "/images/my-edit-2.mp4" } 
+    ]
+  }
+}
