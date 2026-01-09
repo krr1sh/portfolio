@@ -23,7 +23,7 @@
           "match": "Ready",
           "rating": "HIRE",
           "tags": ["Available Now", "Business Analysis", "Data Strategy"],
-          "thumbnail": "/images/future-logo.jpg"
+          "thumbnail": "/images/yourcompany.jpg"
         },
         {
           "id": "exp1",
@@ -124,7 +124,7 @@
           "match": "Expert",
           "rating": "CORE",
           "tags": ["SQL", "Advanced Excel", "Python", "Data Analysis", "KPI Development", "Pandas", "NumPy"],
-          "thumbnail": "/images/skill-analytics.jpg"
+          "thumbnail": "/images/da.jpg"
         },
         {
           "id": "skill2",
@@ -189,7 +189,7 @@
           "match": "Cert",
           "rating": "GGL",
           "tags": ["Project Management", "Tableau", "Data Cleansing"],
-          "thumbnail": "/images/LSS.jpeg"
+          "thumbnail": "/images/lss.jpeg"
         },
         {
           "id": "cert2",
@@ -209,7 +209,7 @@
           "match": "Cert",
           "rating": "AWS",
           "tags": ["Cloud Computing", "Security", "Cloud Architecture"],
-          "thumbnail": "/images/cert-aws.jpg"
+          "thumbnail": "/images/loading.jpg"
         }
       ]
     },
@@ -217,34 +217,36 @@
       "title": "Projects",
       "items": [
         {
-          "id": "proj1",
-          "title": "Sales Dashboard",
-          "subtitle": "Power BI | Retail Analysis",
-          "description": "Designed a dynamic Power BI dashboard for a retail client. The tool aggregated data from 3 disparate sources to track regional sales performance, reducing reporting time by 40%.",
-          "match": "98%",
-          "rating": "PBI",
-          "tags": ["Power BI", "DAX", "Data Modeling", "ETL"],
-          "thumbnail": "/images/project-dashboard.jpg"
+          "id": "book-rec",
+          "title": "Book Recommendation System",
+          "description": "Developed a system using Python, Tkinter, and MySQL, enhancing user engagement with personalized recommendations.",
+          "tech": ["Python", "Tkinter", "MySQL"],
+          "link": "#",
+          "image": "/images/loading.jpg"
         },
         {
-          "id": "proj2",
-          "title": "Churn Prediction Model",
-          "subtitle": "Python | Machine Learning",
-          "description": "Built a logistic regression model using Python (Scikit-Learn) to identify customers at risk of churn. The model achieved 85% accuracy and helped the marketing team target retention campaigns.",
-          "match": "95%",
-          "rating": "ML",
-          "tags": ["Python", "Scikit-Learn", "Logistic Regression", "Predictive Analytics"],
-          "thumbnail": "/images/project-ml.jpg"
+          "id": "erpsim-sap",
+          "title": "ERPsim Manufacturing (SAP)",
+          "description": "Collaborated to create an Executive Planning Report for ERP simulation using SAP, leading to a 25% increase in simulated revenue.",
+          "tech": ["SAP", "ERP Simulation", "Analytics"],
+          "link": "#",
+          "image": "/images/loading.jpg"
         },
         {
-          "id": "proj3",
-          "title": "Inventory Mgmt System",
-          "subtitle": "SQL | Database Design",
-          "description": "Optimized a slow-performing inventory database by normalizing schema and creating stored procedures. This resulted in a 30% improvement in query execution speed for daily reports.",
-          "match": "99%",
-          "rating": "SQL",
-          "tags": ["SQL Server", "Normalization", "Stored Procedures", "Performance Tuning"],
-          "thumbnail": "/images/project-sql.jpg"
+          "id": "youtube-analysis",
+          "title": "YouTube Data Analysis",
+          "description": "Built a data lake on Amazon S3 and developed ETL jobs using AWS Glue and Spark, resulting in a 15% improvement in viewer engagement through interactive Power BI dashboards.",
+          "tech": ["AWS S3", "AWS Glue", "Spark", "Power BI"],
+          "link": "#",
+          "image": "/images/loading.jpg"
+        },
+        {
+          "id": "pharma-life",
+          "title": "Pharma Life Project",
+          "description": "Developed a desktop application for pharmaceutical management using Python, Tkinter, and MySQL, improving inventory tracking and sales reporting efficiency by 40%.",
+          "tech": ["Python", "Tkinter", "MySQL"],
+          "link": "#",
+          "image": "/images/loading.jpg"
         }
       ]
     }
@@ -259,7 +261,7 @@
     "gallery": [
       { "type": "image", "src": "/images/pic1.jpg" },
       { "type": "video", "src": "/images/reel2.mp4" }, 
-      { "type": "video", "src": "/images/my-edit-2.mp4" } 
+      { "type": "video", "src": "/images/reel1.mov" } 
     ]
   }
 }
