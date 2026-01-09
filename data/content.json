@@ -3,7 +3,7 @@
     "title": "Sai Krishna Goli",
     "subtitle": "Business Systems / Data Analyst",
     "description": "I am a results-oriented Business & Data Analyst with over 6 years of experience bridging the gap between complex data and strategic decision-making. From ensuring government compliance in Athens-Clarke County to optimizing high-volume operations at Amazon, I specialize in translating raw data into actionable insights, scalable systems, and measurable business growth.",
-    "thumbnail": "/images/my-profile.jpg",
+    "thumbnail": "/images/my-profile.png",
     "resume": "/resume.pdf"
   },
   "categories": [
@@ -39,7 +39,7 @@
           "match": "Current",
           "rating": "GOVT",
           "tags": ["Systems Analysis", "Compliance", "Support"],
-          "thumbnail": "/images/athens-logo.jpg"
+          "thumbnail": "/images/acc.jpg"
         },
         {
           "id": "exp2",
@@ -54,7 +54,7 @@
           "match": "3 Years",
           "rating": "AMZN",
           "tags": ["Operations", "Devices", "Process Improvement"],
-          "thumbnail": "/images/amazon-logo.jpg"
+          "thumbnail": "/images/amazon-logo.png"
         },
         {
           "id": "exp3",
@@ -94,22 +94,22 @@
         {
           "id": "edu1",
           "title": "MS in Information Systems",
-          "subtitle": "Your University Name | Aug 2022 – May 2024",
+          "subtitle": "Central Michigan University | Aug 2022 – May 2024",
           "description": "A rigorous graduate program focused on the intersection of business strategy and data science. Coursework emphasized predictive analytics, project management methodologies, and enterprise system architecture.",
           "match": "Masters",
           "rating": "MS",
           "tags": ["Business Data Analytics", "Project Management", "Data Mining"],
-          "thumbnail": "/images/university-ms-logo.jpg"
+          "thumbnail": "/images/cmu.jpg"
         },
         {
           "id": "edu2",
           "title": "B.Tech Computer Science",
-          "subtitle": "Your Undergrad Univ | Sep 2014 – Apr 2018",
+          "subtitle": "CMR Technical Campus | Sep 2014 – Apr 2018",
           "description": "Comprehensive technical foundation in software engineering principles. Gained hands-on experience in full-stack web development, database management systems, and algorithm design.",
           "match": "B.Tech",
           "rating": "BS",
           "tags": ["Web Development", "Data Structures", "UI/UX Design"],
-          "thumbnail": "/images/university-bs-logo.jpg"
+          "thumbnail": "/images/cmr.png"
         }
       ]
     },
@@ -134,7 +134,7 @@
           "match": "Expert",
           "rating": "VISUAL",
           "tags": ["Power BI", "Tableau", "SSRS", "Crystal Reports", "Dashboard Design"],
-          "thumbnail": "/images/skill-bi.jpg"
+          "thumbnail": "/images/bi.jpg"
         },
         {
           "id": "skill3",
@@ -144,7 +144,7 @@
           "match": "High",
           "rating": "DB",
           "tags": ["SQL Server", "MySQL", "ETL Pipelines", "Data Validation", "AWS", "Azure"],
-          "thumbnail": "/images/skill-db.jpg"
+          "thumbnail": "/images/db.jpg"
         },
         {
           "id": "skill4",
@@ -154,7 +154,7 @@
           "match": "Expert",
           "rating": "BA",
           "tags": ["Requirements Gathering", "Process Mapping", "Workflow Optimization", "UAT"],
-          "thumbnail": "/images/skill-ba.jpg"
+          "thumbnail": "/images/ba.jpg"
         },
         {
           "id": "skill5",
@@ -164,7 +164,7 @@
           "match": "High",
           "rating": "TOOLS",
           "tags": ["Jira", "Confluence", "CJIS Compliance", "HIPAA", "ERP Systems"],
-          "thumbnail": "/images/skill-tools.jpg"
+          "thumbnail": "/images/tools.jpg"
         },
         {
           "id": "skill6",
@@ -253,12 +253,12 @@
     "bio": "Level 25 Analyst by day, Content Creator by night. When I'm not grinding XP in SQL and Python, you can find me capturing cinematic moments or editing my next montage. I view the world through a creative lens—literally.",
     "hobbies": ["Competitive Gaming", "Video Editing", "Cinematography", "Travel"],
     "instagram": "https://www.instagram.com/thats_his_pov/",
-    "linkedin": "https://linkedin.com/in/your_profile",
-    "email": "saikrishna@example.com",
-    "phone": "+1 (555) 123-4567",
+    "linkedin": "https://linkedin.com/in/imkrr1sh",
+    "email": "saikrishnagoli@icloud.com",
+    "phone": "+1 (989) 402-7174",
     "gallery": [
-      { "type": "image", "src": "/images/my-pic-1.jpg" },
-      { "type": "video", "src": "/images/my-edit-1.mp4" }, 
+      { "type": "image", "src": "/images/pic1.jpg" },
+      { "type": "video", "src": "/images/reel2.mp4" }, 
       { "type": "video", "src": "/images/my-edit-2.mp4" } 
     ]
   }
