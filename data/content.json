@@ -84,7 +84,7 @@
           "match": "1 Year",
           "rating": "MFG",
           "tags": ["Business Analysis", "Requirements", "Process Mapping"],
-          "thumbnail": "/images/republic-logo.jpg"
+          "thumbnail": "/images/rt.jpg"
         }
       ]
     },
@@ -183,23 +183,23 @@
       "items": [
         {
           "id": "cert1",
-          "title": "Google Data Analytics",
+          "title": "Lean Six Sigma Green Belt",
           "subtitle": "Professional Certificate",
           "description": "A comprehensive curriculum covering the entire data lifecycle: ask, prepare, process, analyze, share, and act. Included hands-on labs with R programming and Tableau.",
           "match": "Cert",
           "rating": "GGL",
-          "tags": ["R Programming", "Tableau", "Data Cleansing"],
-          "thumbnail": "/images/cert-google.jpg"
+          "tags": ["Project Management", "Tableau", "Data Cleansing"],
+          "thumbnail": "/images/LSS.jpeg"
         },
         {
           "id": "cert2",
-          "title": "Certified Scrum Master",
-          "subtitle": "Scrum Alliance",
+          "title": "Celonis Process Mining",
+          "subtitle": "Celonis Process Mining - From Theory to Execution",
           "description": "Certified in agile project management, facilitating daily stand-ups, sprint planning, and removing blockers to ensure rapid iterative delivery of software products.",
           "match": "Cert",
           "rating": "CSM",
           "tags": ["Agile Methodology", "Scrum", "Sprint Planning"],
-          "thumbnail": "/images/cert-scrum.jpg"
+          "thumbnail": "/images/celonis.png"
         },
         {
           "id": "cert3",
