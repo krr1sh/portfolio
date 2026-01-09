@@ -296,8 +296,11 @@
         {
           "id": "book-rec",
           "title": "Book Recommendation System",
+          "subtitle": "Python & SQL",
           "description": "Developed a system using Python, Tkinter, and MySQL, enhancing user engagement with personalized recommendations.",
-          "tech": [
+          "match": "Code",
+          "rating": "DEV",
+          "tags": [
             "Python",
             "Tkinter",
             "MySQL"
@@ -308,8 +311,11 @@
         {
           "id": "erpsim-sap",
           "title": "ERPsim Manufacturing (SAP)",
+          "subtitle": "SAP Analytics",
           "description": "Collaborated to create an Executive Planning Report for ERP simulation using SAP, leading to a 25% increase in simulated revenue.",
-          "tech": [
+          "match": "ERP",
+          "rating": "SAP",
+          "tags": [
             "SAP",
             "ERP Simulation",
             "Analytics"
@@ -320,8 +326,11 @@
         {
           "id": "youtube-analysis",
           "title": "YouTube Data Analysis",
+          "subtitle": "AWS & Big Data",
           "description": "Built a data lake on Amazon S3 and developed ETL jobs using AWS Glue and Spark, resulting in a 15% improvement in viewer engagement through interactive Power BI dashboards.",
-          "tech": [
+          "match": "Data",
+          "rating": "AWS",
+          "tags": [
             "AWS S3",
             "AWS Glue",
             "Spark",
@@ -333,8 +342,11 @@
         {
           "id": "pharma-life",
           "title": "Pharma Life Project",
+          "subtitle": "Desktop App",
           "description": "Developed a desktop application for pharmaceutical management using Python, Tkinter, and MySQL, improving inventory tracking and sales reporting efficiency by 40%.",
-          "tech": [
+          "match": "App",
+          "rating": "DEV",
+          "tags": [
             "Python",
             "Tkinter",
             "MySQL"
