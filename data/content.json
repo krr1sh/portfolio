@@ -16,13 +16,17 @@
           "subtitle": "Your Location | Next Chapter",
           "description": "I am currently seeking my next challenge. Hiring me means adding a dedicated, compliance-focused analyst to your team who is ready to optimize your workflows and derive value from your data on Day 1. Let's make this tile a reality.",
           "bullets": [
-             "Ready to deploy advanced SQL and Python skills to solve your data problems.",
-             "Prepared to lead requirement gathering and system optimization projects.",
-             "Eager to bring 6+ years of enterprise and government experience to your organization."
+            "Ready to deploy advanced SQL and Python skills to solve your data problems.",
+            "Prepared to lead requirement gathering and system optimization projects.",
+            "Eager to bring 6+ years of enterprise and government experience to your organization."
           ],
           "match": "Ready",
           "rating": "HIRE",
-          "tags": ["Available Now", "Business Analysis", "Data Strategy"],
+          "tags": [
+            "Available Now",
+            "Business Analysis",
+            "Data Strategy"
+          ],
           "thumbnail": "/images/yourcompany.jpg"
         },
         {
@@ -31,14 +35,18 @@
           "subtitle": "Unified Government of Athens-Clarke County | Jan 2025 – Present",
           "description": "Serving as a key technical liaison for the local government, focused on modernizing legacy systems and ensuring strict regulatory compliance across judicial and operational departments.",
           "bullets": [
-             "Leading critical system analysis initiatives to map current workflows and identify automation opportunities within government operations.",
-             " enforcing CJIS compliance standards and maintaining rigorous data security protocols across inter-departmental networks.",
-             "Collaborating directly with IT leadership and non-technical stakeholders to translate complex legislative requirements into technical specifications.",
-             "Providing Tier-2 support and optimization for the Tyler New World ERP and Enterprise Mobile (JMS) systems."
+            "Leading critical system analysis initiatives to map current workflows and identify automation opportunities within government operations.",
+            "Enforcing CJIS compliance standards and maintaining rigorous data security protocols across inter-departmental networks.",
+            "Collaborating directly with IT leadership and non-technical stakeholders to translate complex legislative requirements into technical specifications.",
+            "Providing Tier-2 support and optimization for the Tyler New World ERP and Enterprise Mobile (JMS) systems."
           ],
           "match": "Current",
           "rating": "GOVT",
-          "tags": ["Systems Analysis", "Compliance", "Support"],
+          "tags": [
+            "Systems Analysis",
+            "Compliance",
+            "Support"
+          ],
           "thumbnail": "/images/acc.jpg"
         },
         {
@@ -53,7 +61,11 @@
           ],
           "match": "3 Years",
           "rating": "AMZN",
-          "tags": ["Operations", "Devices", "Process Improvement"],
+          "tags": [
+            "Operations",
+            "Devices",
+            "Process Improvement"
+          ],
           "thumbnail": "/images/amazon-logo.png"
         },
         {
@@ -68,7 +80,11 @@
           ],
           "match": "6 Mos",
           "rating": "DATA",
-          "tags": ["SQL", "Reporting", "Data Cleaning"],
+          "tags": [
+            "SQL",
+            "Reporting",
+            "Data Cleaning"
+          ],
           "thumbnail": "/images/clasc-logo.jpg"
         },
         {
@@ -83,7 +99,11 @@
           ],
           "match": "1 Year",
           "rating": "MFG",
-          "tags": ["Business Analysis", "Requirements", "Process Mapping"],
+          "tags": [
+            "Business Analysis",
+            "Requirements",
+            "Process Mapping"
+          ],
           "thumbnail": "/images/rt.jpg"
         }
       ]
@@ -98,7 +118,11 @@
           "description": "A rigorous graduate program focused on the intersection of business strategy and data science. Coursework emphasized predictive analytics, project management methodologies, and enterprise system architecture.",
           "match": "Masters",
           "rating": "MS",
-          "tags": ["Business Data Analytics", "Project Management", "Data Mining"],
+          "tags": [
+            "Business Data Analytics",
+            "Project Management",
+            "Data Mining"
+          ],
           "thumbnail": "/images/cmu.jpg"
         },
         {
@@ -108,7 +132,11 @@
           "description": "Comprehensive technical foundation in software engineering principles. Gained hands-on experience in full-stack web development, database management systems, and algorithm design.",
           "match": "B.Tech",
           "rating": "BS",
-          "tags": ["Web Development", "Data Structures", "UI/UX Design"],
+          "tags": [
+            "Web Development",
+            "Data Structures",
+            "UI/UX Design"
+          ],
           "thumbnail": "/images/cmr.png"
         }
       ]
@@ -123,7 +151,15 @@
           "description": "My primary toolkit for turning raw data into insight. I leverage Python libraries (Pandas, NumPy) for complex transformations and SQL for robust querying, ensuring data is clean, accurate, and ready for analysis.",
           "match": "Expert",
           "rating": "CORE",
-          "tags": ["SQL", "Advanced Excel", "Python", "Data Analysis", "KPI Development", "Pandas", "NumPy"],
+          "tags": [
+            "SQL",
+            "Advanced Excel",
+            "Python",
+            "Data Analysis",
+            "KPI Development",
+            "Pandas",
+            "NumPy"
+          ],
           "thumbnail": "/images/da.jpg"
         },
         {
@@ -133,7 +169,13 @@
           "description": "Translating numbers into narratives. I specialize in designing interactive Power BI and Tableau dashboards that allow executives to drill down into KPIs and make evidence-based decisions instantly.",
           "match": "Expert",
           "rating": "VISUAL",
-          "tags": ["Power BI", "Tableau", "SSRS", "Crystal Reports", "Dashboard Design"],
+          "tags": [
+            "Power BI",
+            "Tableau",
+            "SSRS",
+            "Crystal Reports",
+            "Dashboard Design"
+          ],
           "thumbnail": "/images/bi.jpg"
         },
         {
@@ -143,7 +185,14 @@
           "description": "The backbone of any data operation. I have extensive experience managing relational databases, building ETL pipelines to move data efficiently, and enforcing data quality standards on AWS and Azure platforms.",
           "match": "High",
           "rating": "DB",
-          "tags": ["SQL Server", "MySQL", "ETL Pipelines", "Data Validation", "AWS", "Azure"],
+          "tags": [
+            "SQL Server",
+            "MySQL",
+            "ETL Pipelines",
+            "Data Validation",
+            "AWS",
+            "Azure"
+          ],
           "thumbnail": "/images/db.jpg"
         },
         {
@@ -153,7 +202,12 @@
           "description": "I speak both 'Dev' and 'Business'. My expertise lies in gathering unclear requirements, mapping complex processes, and managing User Acceptance Testing (UAT) to ensure technical solutions meet business goals.",
           "match": "Expert",
           "rating": "BA",
-          "tags": ["Requirements Gathering", "Process Mapping", "Workflow Optimization", "UAT"],
+          "tags": [
+            "Requirements Gathering",
+            "Process Mapping",
+            "Workflow Optimization",
+            "UAT"
+          ],
           "thumbnail": "/images/ba.jpg"
         },
         {
@@ -163,7 +217,13 @@
           "description": "Navigating the regulatory landscape. I am well-versed in maintaining compliance (CJIS, HIPAA) and utilizing enterprise management tools like Jira and ERP systems to keep projects on track and secure.",
           "match": "High",
           "rating": "TOOLS",
-          "tags": ["Jira", "Confluence", "CJIS Compliance", "HIPAA", "ERP Systems"],
+          "tags": [
+            "Jira",
+            "Confluence",
+            "CJIS Compliance",
+            "HIPAA",
+            "ERP Systems"
+          ],
           "thumbnail": "/images/tools.jpg"
         },
         {
@@ -173,7 +233,12 @@
           "description": "Understanding the front-end. My background in web technologies allows me to communicate effectively with developers and script custom solutions when out-of-the-box tools aren't enough.",
           "match": "Med",
           "rating": "DEV",
-          "tags": ["HTML", "CSS", "SEO", "Python Scripting"],
+          "tags": [
+            "HTML",
+            "CSS",
+            "SEO",
+            "Python Scripting"
+          ],
           "thumbnail": "/images/skill-code.jpg"
         }
       ]
@@ -188,7 +253,11 @@
           "description": "A comprehensive curriculum covering the entire data lifecycle: ask, prepare, process, analyze, share, and act. Included hands-on labs with R programming and Tableau.",
           "match": "Cert",
           "rating": "GGL",
-          "tags": ["Project Management", "Tableau", "Data Cleansing"],
+          "tags": [
+            "Project Management",
+            "Tableau",
+            "Data Cleansing"
+          ],
           "thumbnail": "/images/lss.jpeg"
         },
         {
@@ -198,7 +267,11 @@
           "description": "Certified in agile project management, facilitating daily stand-ups, sprint planning, and removing blockers to ensure rapid iterative delivery of software products.",
           "match": "Cert",
           "rating": "CSM",
-          "tags": ["Agile Methodology", "Scrum", "Sprint Planning"],
+          "tags": [
+            "Agile Methodology",
+            "Scrum",
+            "Sprint Planning"
+          ],
           "thumbnail": "/images/celonis.png"
         },
         {
@@ -208,7 +281,11 @@
           "description": "Validated knowledge of the AWS Cloud platform, including basic security and compliance aspects, shared responsibility model, and core AWS services.",
           "match": "Cert",
           "rating": "AWS",
-          "tags": ["Cloud Computing", "Security", "Cloud Architecture"],
+          "tags": [
+            "Cloud Computing",
+            "Security",
+            "Cloud Architecture"
+          ],
           "thumbnail": "/images/loading.jpg"
         }
       ]
@@ -220,48 +297,79 @@
           "id": "book-rec",
           "title": "Book Recommendation System",
           "description": "Developed a system using Python, Tkinter, and MySQL, enhancing user engagement with personalized recommendations.",
-          "tech": ["Python", "Tkinter", "MySQL"],
+          "tech": [
+            "Python",
+            "Tkinter",
+            "MySQL"
+          ],
           "link": "#",
-          "image": "/images/loading.jpg"
+          "thumbnail": "/images/loading.jpg"
         },
         {
           "id": "erpsim-sap",
           "title": "ERPsim Manufacturing (SAP)",
           "description": "Collaborated to create an Executive Planning Report for ERP simulation using SAP, leading to a 25% increase in simulated revenue.",
-          "tech": ["SAP", "ERP Simulation", "Analytics"],
+          "tech": [
+            "SAP",
+            "ERP Simulation",
+            "Analytics"
+          ],
           "link": "#",
-          "image": "/images/loading.jpg"
+          "thumbnail": "/images/loading.jpg"
         },
         {
           "id": "youtube-analysis",
           "title": "YouTube Data Analysis",
           "description": "Built a data lake on Amazon S3 and developed ETL jobs using AWS Glue and Spark, resulting in a 15% improvement in viewer engagement through interactive Power BI dashboards.",
-          "tech": ["AWS S3", "AWS Glue", "Spark", "Power BI"],
+          "tech": [
+            "AWS S3",
+            "AWS Glue",
+            "Spark",
+            "Power BI"
+          ],
           "link": "#",
-          "image": "/images/loading.jpg"
+          "thumbnail": "/images/loading.jpg"
         },
         {
           "id": "pharma-life",
           "title": "Pharma Life Project",
           "description": "Developed a desktop application for pharmaceutical management using Python, Tkinter, and MySQL, improving inventory tracking and sales reporting efficiency by 40%.",
-          "tech": ["Python", "Tkinter", "MySQL"],
+          "tech": [
+            "Python",
+            "Tkinter",
+            "MySQL"
+          ],
           "link": "#",
-          "image": "/images/loading.jpg"
+          "thumbnail": "/images/loading.jpg"
         }
       ]
     }
   ],
   "personal": {
     "bio": "Level 25 Analyst by day, Content Creator by night. When I'm not grinding XP in SQL and Python, you can find me capturing cinematic moments or editing my next montage. I view the world through a creative lens—literally.",
-    "hobbies": ["Competitive Gaming", "Video Editing", "Cinematography", "Travel"],
+    "hobbies": [
+      "Competitive Gaming",
+      "Video Editing",
+      "Cinematography",
+      "Travel"
+    ],
     "instagram": "https://www.instagram.com/thats_his_pov/",
     "linkedin": "https://linkedin.com/in/imkrr1sh",
     "email": "saikrishnagoli@icloud.com",
     "phone": "+1 (989) 402-7174",
     "gallery": [
-      { "type": "image", "src": "/images/pic1.jpg" },
-      { "type": "video", "src": "/images/reel2.mp4" }, 
-      { "type": "video", "src": "/images/reel1.mov" } 
+      {
+        "type": "image",
+        "src": "/images/pic1.jpg"
+      },
+      {
+        "type": "video",
+        "src": "/images/reel2.mp4"
+      },
+      {
+        "type": "video",
+        "src": "/images/reel1.mov"
+      }
     ]
   }
 }
