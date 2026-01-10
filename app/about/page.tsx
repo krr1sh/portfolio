@@ -1,12 +1,12 @@
 'use client';
-import { useState, useRef } from 'react';
+import { useState } from 'react';
 import Navbar from '@/components/Navbar';
 import contentData from '@/data/content.json';
 import Image from 'next/image';
-import { Camera, Gamepad2, Instagram, Film, Zap, MapPin, ArrowLeft, Play, Pause, X } from 'lucide-react';
+import { Camera, Gamepad2, Instagram, Film, Zap, MapPin, ArrowLeft, Play, PenTool, Mountain } from 'lucide-react';
 
 export default function AboutPage() {
-  const { bio, hobbies, gallery, instagram } = contentData.personal;
+  const { bio, gallery, instagram } = contentData.personal;
   const profilePic = "/images/my-profile.png"; 
   
   // STATE FOR VIDEO PLAYER
@@ -14,6 +14,22 @@ export default function AboutPage() {
 
   // Close player handler
   const closePlayer = () => setVideoSrc(null);
+
+  // CUSTOM HOBBIES LIST
+  const customHobbies = [
+    { name: "Gaming", icon: <Gamepad2 className="w-8 h-8" /> },
+    { name: "Editing", icon: <Film className="w-8 h-8" /> },
+    { name: "Designing", icon: <PenTool className="w-8 h-8" /> },
+    { name: "Hiking", icon: <Mountain className="w-8 h-8" /> }
+  ];
+
+  // EXTENDED HIGHLIGHTS (Original + 3 New Placeholders)
+  const fullGallery = [
+    ...gallery,
+    { type: 'image', src: '/images/highlight4.jpg' }, // New Slot 1
+    { type: 'image', src: '/images/highlight5.jpg' }, // New Slot 2
+    { type: 'image', src: '/images/highlight6.jpg' }  // New Slot 3
+  ];
 
   return (
     <main className="min-h-screen bg-[#0a0a0a] text-white selection:bg-[#E50914] selection:text-white">
@@ -68,28 +84,45 @@ export default function AboutPage() {
               </span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-400 font-medium max-w-2xl leading-relaxed">{bio}</p>
-            <div className="pt-4 flex justify-center md:justify-start">
-              <a href={instagram} target="_blank" className="flex items-center gap-3 bg-white text-black px-8 py-3 rounded font-black hover:bg-[#E50914] hover:text-white transition-all transform hover:-translate-y-1 shadow-lg">
+            
+            {/* BUTTONS: EDITS & STEAM (MATCHING STYLES) */}
+            <div className="pt-4 flex flex-wrap justify-center md:justify-start gap-4">
+              
+              {/* INSTAGRAM BUTTON */}
+              <a 
+                href={instagram} 
+                target="_blank" 
+                className="flex items-center gap-3 bg-white text-black px-8 py-3 rounded font-black hover:bg-[#E50914] hover:text-white transition-all transform hover:-translate-y-1 shadow-lg"
+              >
                 <Instagram className="w-5 h-5" /> MY EDITS
               </a>
+              
+              {/* STEAM BUTTON (Updated Link & Style) */}
+              <a 
+                href="https://steamcommunity.com/id/imkrr1sh" 
+                target="_blank" 
+                className="flex items-center gap-3 bg-white text-black px-8 py-3 rounded font-black hover:bg-[#E50914] hover:text-white transition-all transform hover:-translate-y-1 shadow-lg"
+              >
+                <Gamepad2 className="w-5 h-5" /> STEAM
+              </a>
+
             </div>
           </div>
         </div>
 
-        {/* HOBBIES */}
+        {/* HOBBIES (Cleaned up, no attributes) */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-24">
-           {hobbies.map((hobby: string, index: number) => (
-             <div key={index} className="bg-[#1f1f1f] border border-white/5 p-6 rounded-xl hover:border-[#E50914] transition group">
-                <div className="mb-4 text-[#E50914] group-hover:scale-110 transition">
-                  {hobby.includes("Game") ? <Gamepad2 className="w-8 h-8" /> : hobby.includes("Photo") ? <Camera className="w-8 h-8" /> : hobby.includes("Travel") ? <MapPin className="w-8 h-8" /> : <Film className="w-8 h-8" />}
+           {customHobbies.map((hobby, index) => (
+             <div key={index} className="bg-[#1f1f1f] border border-white/5 p-6 rounded-xl hover:border-[#E50914] transition group flex flex-col items-center justify-center text-center gap-4 min-h-[160px]">
+                <div className="text-[#E50914] group-hover:scale-110 transition">
+                  {hobby.icon}
                 </div>
-                <h3 className="text-gray-500 text-xs font-bold uppercase tracking-wider mb-1">Attribute {index + 1}</h3>
-                <p className="text-lg font-bold text-white">{hobby}</p>
+                <p className="text-lg font-bold text-white uppercase tracking-wider">{hobby.name}</p>
              </div>
            ))}
         </div>
 
-        {/* GALLERY (UPDATED TO OPEN PLAYER) */}
+        {/* GALLERY */}
         <div className="space-y-8">
           <div className="flex items-center gap-4">
              <div className="h-8 w-1 bg-[#E50914]"></div>
@@ -97,7 +130,7 @@ export default function AboutPage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {gallery.map((item: any, index: number) => (
+            {fullGallery.map((item: any, index: number) => (
               <div 
                 key={index} 
                 onClick={() => item.type === 'video' ? setVideoSrc(item.src) : null}
@@ -118,7 +151,7 @@ export default function AboutPage() {
                   </>
                 ) : (
                   <>
-                    <Image src={item.src} alt="Gallery" fill className="object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition duration-500" />
+                    <Image src={item.src || "/images/loading.jpg"} alt="Gallery" fill className="object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition duration-500" />
                     <div className="absolute top-4 right-4 bg-black/50 backdrop-blur px-2 py-1 rounded text-xs font-bold flex items-center gap-1">
                       <Camera className="w-3 h-3 text-[#E50914]" /> SHOT
                     </div>
