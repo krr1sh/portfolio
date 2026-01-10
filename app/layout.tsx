@@ -1,28 +1,20 @@
 import './globals.css';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
-import { Analytics } from "@vercel/analytics/next"
 
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://saikrishnagoli.com'),
   title: 'Sai Krishna Goli | Business Systems & Data Analyst',
-  description: 'Portfolio of Sai Krishna Goli - Experienced Analyst specializing in Data Strategy, Compliance, and Business Intelligence.',
-  openGraph: {
-    title: 'Sai Krishna Goli | Portfolio',
-    description: 'Check out my professional journey, skills, and creative edits.',
-    url: 'https://saikrishnagoli.com', 
-    siteName: 'Sai Krishna Portfolio',
-    images: [
-      {
-        url: '/images/my-profile.jpg',
-        width: 1200,
-        height: 630,
-      },
-    ],
-    locale: 'en_US',
-    type: 'website',
+  description: 'Portfolio of Sai Krishna Goli...',
+  icons: {
+    // ADDED ?v=2 TO FORCE BROWSER TO RELOAD IMAGE
+    icon: '/logo.png?v=2', 
+    shortcut: '/logo.png?v=2',
+    apple: '/logo.png?v=2',
   },
+  // ... rest of your openGraph settings ...
 };
 
 export default function RootLayout({
@@ -32,7 +24,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} overflow-x-hidden`}>{children}</body>
+      <body className={`${inter.className} overflow-x-hidden bg-[#141414]`}>
+        {children}
+      </body>
     </html>
   );
 }

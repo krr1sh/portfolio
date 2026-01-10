@@ -1,8 +1,9 @@
 'use client';
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { usePathname, useRouter } from 'next/navigation';
-import { Search, Bell, User, LogOut, Settings, Film } from 'lucide-react';
+import { Search, Bell, LogOut, Settings, Film } from 'lucide-react';
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -18,11 +19,9 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // --- NEW: HANDLE SIGN OUT ---
   const handleSignOut = () => {
-    sessionStorage.removeItem('netflix-profile'); // Clear session
-    router.push('/'); // Go to Home
-    // We use a small timeout to force reload ensuring the Gate appears
+    sessionStorage.removeItem('netflix-profile'); 
+    router.push('/'); 
     setTimeout(() => {
         window.location.reload();
     }, 100);
@@ -37,14 +36,21 @@ export default function Navbar() {
   ];
 
   return (
-    <header className={`${isScrolled ? 'bg-[#141414]' : 'bg-transparent'} fixed top-0 z-50 w-full transition duration-500`}>
-      <div className="flex items-center px-3 py-4 md:px-12 gap-4 md:gap-8 relative">
+    <header className={`fixed top-0 z-50 w-full transition duration-500 ${isScrolled ? 'bg-[#141414]' : 'bg-gradient-to-b from-black/80 via-black/40 to-transparent'}`}>
+      <div className="flex items-center px-4 py-4 md:px-12 gap-4 md:gap-8 relative">
         
+        {/* LOGO IMAGE */}
         <Link href="/">
-          <h1 className="text-[#E50914] text-xl md:text-3xl font-black cursor-pointer tracking-tighter uppercase drop-shadow-md whitespace-nowrap" 
-              style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.6)' }}>
-            Sai Krishna Goli
-          </h1>
+          <div className="relative w-28 h-10 md:w-36 md:h-12 cursor-pointer">
+             {/* NOW POINTING TO icon.png AS REQUESTED */}
+             <Image 
+               src="/icon.png" 
+               alt="Sai Krishna Goli" 
+               fill 
+               className="object-contain object-left"
+               priority
+             />
+          </div>
         </Link>
 
         {/* NAVIGATION LINKS */}
@@ -53,8 +59,8 @@ export default function Navbar() {
             <li key={link.name}>
               <Link 
                 href={link.path}
-                className={`text-sm font-medium transition cursor-pointer ${
-                  pathname === link.path ? "text-white font-bold" : "text-[#e5e5e5] hover:text-gray-300"
+                className={`text-sm transition cursor-pointer ${
+                  pathname === link.path ? "text-white font-bold" : "text-[#e5e5e5] hover:text-gray-300 font-medium"
                 }`}
               >
                 {link.name}
@@ -87,10 +93,8 @@ export default function Navbar() {
               className="w-6 h-6 cursor-pointer hover:text-gray-300" 
               onClick={() => setShowNotifications(!showNotifications)}
             />
-            {/* Notification Dot */}
             <div className="absolute top-0 right-0 w-2 h-2 bg-red-600 rounded-full"></div>
 
-            {/* Notification Dropdown */}
             {showNotifications && (
               <div className="absolute top-10 right-0 w-64 bg-black/90 border border-white/20 p-4 rounded shadow-2xl z-50">
                 <h4 className="text-sm font-bold border-b border-gray-700 pb-2 mb-2">Notifications</h4>
@@ -100,13 +104,6 @@ export default function Navbar() {
                     <div>
                       <p className="text-xs text-gray-300">New Project Added</p>
                       <p className="text-xs text-gray-500">Just now</p>
-                    </div>
-                  </div>
-                  <div className="flex gap-3 items-start hover:bg-white/10 p-2 rounded cursor-pointer transition">
-                    <div className="w-10 h-6 bg-green-600 rounded"></div>
-                    <div>
-                      <p className="text-xs text-gray-300">Resume Updated</p>
-                      <p className="text-xs text-gray-500">2 days ago</p>
                     </div>
                   </div>
                 </div>
@@ -119,7 +116,6 @@ export default function Navbar() {
             <div className="w-8 h-8 rounded bg-[#E50914] flex items-center justify-center font-bold">S</div>
             <span className={`w-0 h-0 border-l-[5px] border-l-transparent border-r-[5px] border-r-transparent border-t-[5px] border-t-white transition-transform ${showProfileMenu ? 'rotate-180' : ''}`}></span>
             
-            {/* Profile Dropdown */}
             {showProfileMenu && (
               <div className="absolute top-10 right-0 w-48 bg-black/95 border border-white/10 py-2 rounded shadow-2xl z-50">
                 <Link href="/about" className="flex items-center gap-3 px-4 py-3 hover:bg-white/10 transition text-sm">
@@ -129,18 +125,12 @@ export default function Navbar() {
                   <Settings className="w-4 h-4" /> Settings
                 </div>
                 <div className="border-t border-gray-700 my-1"></div>
-                
-                {/* SIGN OUT BUTTON (UPDATED) */}
-                <div 
-                  onClick={handleSignOut}
-                  className="flex items-center gap-3 px-4 py-3 hover:bg-white/10 transition text-sm cursor-pointer"
-                >
+                <div onClick={handleSignOut} className="flex items-center gap-3 px-4 py-3 hover:bg-white/10 transition text-sm cursor-pointer">
                    <LogOut className="w-4 h-4 text-gray-400" /> Sign out
                 </div>
               </div>
             )}
           </div>
-
         </div>
       </div>
     </header>
