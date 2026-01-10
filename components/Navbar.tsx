@@ -1,7 +1,7 @@
 'use client';
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { usePathname } from 'next/navigation';
+import { usePathname, useRouter } from 'next/navigation';
 import { Search, Bell, User, LogOut, Settings, Film } from 'lucide-react';
 
 export default function Navbar() {
@@ -10,12 +10,23 @@ export default function Navbar() {
   const [showNotifications, setShowNotifications] = useState(false);
   const [showProfileMenu, setShowProfileMenu] = useState(false);
   const pathname = usePathname();
+  const router = useRouter();
 
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 0);
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  // --- NEW: HANDLE SIGN OUT ---
+  const handleSignOut = () => {
+    sessionStorage.removeItem('netflix-profile'); // Clear session
+    router.push('/'); // Go to Home
+    // We use a small timeout to force reload ensuring the Gate appears
+    setTimeout(() => {
+        window.location.reload();
+    }, 100);
+  };
 
   const navLinks = [
     { name: "Home", path: "/" },
@@ -61,9 +72,6 @@ export default function Navbar() {
               className="w-6 h-6 cursor-pointer hover:text-gray-300" 
               onClick={() => setShowSearch(!showSearch)}
             />
-            {/* FIXED: Added suppressHydrationWarning to stop Bitwarden/Extensions from crashing the app 
-              Added autoComplete="off" to discourage autofill
-            */}
             <input 
               type="text" 
               placeholder="Titles, people, genres"
@@ -121,9 +129,14 @@ export default function Navbar() {
                   <Settings className="w-4 h-4" /> Settings
                 </div>
                 <div className="border-t border-gray-700 my-1"></div>
-                <Link href="/contact" className="flex items-center gap-3 px-4 py-3 hover:bg-white/10 transition text-sm">
+                
+                {/* SIGN OUT BUTTON (UPDATED) */}
+                <div 
+                  onClick={handleSignOut}
+                  className="flex items-center gap-3 px-4 py-3 hover:bg-white/10 transition text-sm cursor-pointer"
+                >
                    <LogOut className="w-4 h-4 text-gray-400" /> Sign out
-                </Link>
+                </div>
               </div>
             )}
           </div>
