@@ -16,7 +16,7 @@
           "subtitle": "Your Location | Next Chapter",
           "description": "I am currently seeking my next challenge. Hiring me means adding a dedicated, compliance-focused analyst to your team who is ready to optimize your workflows and derive value from your data on Day 1. Let's make this tile a reality.",
           "bullets": [
-            "Ready to deploy advanced SQL and Python skills to solve your data problems.",
+            "Ready to deploy advanced SQL & Python skills to solve your data problems.",
             "Prepared to lead requirement gathering and system optimization projects.",
             "Eager to bring 6+ years of enterprise and government experience to your organization."
           ],
@@ -31,7 +31,7 @@
         },
         {
           "id": "exp1",
-          "title": "Systems Analyst",
+          "title": "Business Systems Analyst",
           "subtitle": "Unified Government of Athens-Clarke County | Jan 2025 – Present",
           "description": "Serving as a key technical liaison for the local government, focused on modernizing legacy systems and ensuring strict regulatory compliance across judicial and operational departments.",
           "bullets": [
@@ -51,7 +51,7 @@
         },
         {
           "id": "exp2",
-          "title": "Digital & Devices Associate",
+          "title": "Data Analyst | Digital & Devices",
           "subtitle": "Amazon | Sep 2019 – Jul 2022",
           "description": "Operated within Amazon's high-velocity logistics network, focusing on device ecosystem management, technical troubleshooting, and process efficiency at scale.",
           "bullets": [
@@ -89,7 +89,7 @@
         },
         {
           "id": "exp4",
-          "title": "Business Analyst",
+          "title": "Data Analyst",
           "subtitle": "Republic Tools | April 2018 – Feb 2019",
           "description": "Acted as the bridge between manufacturing floor operations and management strategy, using data to drive efficiency in a production environment.",
           "bullets": [
